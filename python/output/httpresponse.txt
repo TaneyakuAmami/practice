@@ -1,4 +1,4 @@
 https://www.google.com/?hl=ja
 200
 text/html; charset=Shift_JIS
-<http.client.HTTPResponse object at 0x00000190C39DC220>
+<http.client.HTTPResponse object at 0x000002277C87C220>
