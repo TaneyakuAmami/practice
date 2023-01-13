@@ -10,4 +10,4 @@ response = requests.get(url, headers=header, params=param, timeout=3)
 
 #print(response.text[:500])
 for key,value in response.headers.items():
- print(key,'   ',value)
+    print(key,'   ',value)
