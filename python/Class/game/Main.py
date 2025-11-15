@@ -1,0 +1,2 @@
+print("game start")
+
