@@ -20,7 +20,8 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 from django.conf import settings
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
+#    path("polls/", include("polls.urls")),
+    path("polls/", include("django_polls.urls")),
     path('admin/', admin.site.urls),
 ]
 
