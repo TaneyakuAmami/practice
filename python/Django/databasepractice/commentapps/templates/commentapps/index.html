@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>index</title>
+  </head>
+  <body>
+  {% if comments %}
+    <ul>
+    {% for comment in comments %}
+      <li><a>{{ comment.comment_text }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No comments are available.</p>
+  {% endif %}
+
+<form action="/commentapps/commentsubmit" method="post">
+{% csrf_token %}
+<fieldset>
+    <input type="textarea" name="comment" id="123" value="">
+</fieldset>
+<input type="submit" value="Post">
+</form>
+
+  </body>
+</html>
