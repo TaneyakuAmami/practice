@@ -1,0 +1,27 @@
+
+python -c "import django; print(django.__path__)"
+['C:\\Users\\hkrmo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\django']
+
+cd Documents\Git\practice\python\Django\djangotutorial
+python manage.py runserver
+http://127.0.0.1:8000/polls/
+http://127.0.0.1:8000/admin/
+admin
+Fullmoon7442
+
+cd C:\Users\hkrmo\Documents\Git\practice\python\Django\databasepractice
+http://127.0.0.1:8000/commentapps/
+
+
+
+PostgreSQL
+name:postgres
+user:postgres
+pass:passwd
+port:5432
+
+ファイアウォールの設定
+pg_hba.conf に以下を追加
+ host    all             all             0.0.0.0/0            trust
+python環境にPostgresのアダプタを追加する
+ pip install psycopg2-binary
