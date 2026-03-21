@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>commentlist</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'csspractice/style.css' %}">
+  </head>
+  <body>
+  {% if comments %}
+    <ul>
+    {% for comment in comments %}
+      <li><a>{{ comment.comment_text }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No comments are available.</p>
+  {% endif %}
+
+<form action="/csspractice/commentsubmit" method="post">
+{% csrf_token %}
+<fieldset>
+    <input type="textarea" name="comment" id="123" value="">
+</fieldset>
+<input type="submit" value="Post">
+</form>
+
+<div class="container">
+  <ul class="carousel">
+    <li class="item"><img src="{% static 'csspractice/images/IMG_0169.JPG' %}" alt=""></li>
+    <li class="item"><img src="{% static 'csspractice/images/IMG_0223.JPG' %}" alt=""></li>
+    <li class="item"><img src="{% static 'csspractice/images/IMG_0309.JPG' %}" alt=""></li>
+  </ul>
+</div> 
+
+  </body>
+</html>

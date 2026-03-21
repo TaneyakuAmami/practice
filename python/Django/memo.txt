@@ -1,3 +1,15 @@
+cd Documents\Git\practice\python\Django
+プロジェクト名のフォルダを作る
+django-admin startproject mysite [プロジェクト名]
+
+python manage.py startapp [アプリ名]
+
+mysite/settings.pyのINSTALLED_APPSのデータベースを作成
+python manage.py migrate
+
+python manage.py runserver
+http://127.0.0.1:8000/admin/
+
 
 python -c "import django; print(django.__path__)"
 ['C:\\Users\\hkrmo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\django']
@@ -9,10 +21,9 @@ http://127.0.0.1:8000/admin/
 admin
 Fullmoon7442
 
+
 cd C:\Users\hkrmo\Documents\Git\practice\python\Django\databasepractice
 http://127.0.0.1:8000/commentapps/
-
-
 
 PostgreSQL
 name:postgres
