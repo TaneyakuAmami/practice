@@ -13,29 +13,18 @@
       <nav class="nav">
         <ul>
           <li class="menu-item"><a href="#">項目1</a></li>
-          <li class="menu-item"><a href="#">項目2</a></li>
+          <li class="menu-item"><a href="{% url 'csspractice:commentview' %}">コメント</a></li>
         </ul>
       </nav>
     </header>
 
-    <h2><font face="serif">Comments</font></h2>
-  {% if comments %}
-    <ul>
-    {% for comment in comments %}
-      <li><a>{{ comment.comment_text }}</a></li>
-    {% endfor %}
-    </ul>
-  {% else %}
-    <p>No comments are available.</p>
-  {% endif %}
-
-<form action="/csspractice/commentsubmit" method="post">
-{% csrf_token %}
-<fieldset>
-    <input type="textarea" name="comment" id="123" value="">
-</fieldset>
-<input type="submit" value="Post">
-</form>
+   <div class="container">
+     <ul class="carousel">
+       <li class="item"><img src="{% static 'csspractice/images/IMG_0169.JPG' %}" alt=""></li>
+       <li class="item"><img src="{% static 'csspractice/images/IMG_0223.JPG' %}" alt=""></li>
+       <li class="item"><img src="{% static 'csspractice/images/IMG_0309.JPG' %}" alt=""></li>
+     </ul>
+   </div> 
 
   </body>
 </html>

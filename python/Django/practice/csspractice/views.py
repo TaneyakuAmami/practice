@@ -5,6 +5,9 @@ from django.utils import timezone
 from django.urls import reverse
 
 # Create your views here.
+def top(request):
+    return render(request, "csspractice/top.html")
+
 def commentView(request):
     comments = Comment.objects.order_by("-post_date")[:5]
     context = {"comments": comments}

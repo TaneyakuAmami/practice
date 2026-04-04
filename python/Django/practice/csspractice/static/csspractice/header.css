@@ -1,0 +1,32 @@
+/* 参考: https://style.potepan.com/articles/22186.html */
+header {
+    display:flex;
+    width: 100%;
+    height: 100px;
+    background-color: darkgrey;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+header li a {
+    color: black
+}
+
+
+/* 参考: https://kouhekikyozou.com/css_position_fixed_header_overlap */
+body {
+    padding-top: 100px;
+}
