@@ -3,4 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" conent="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
   </head>
+  <body>
+    <div class="slider">
+      <div><img src="image/IMG_0169.JPG" alt=""></div>
+      <div><img src="image/IMG_0223.JPG" alt=""></div>
+      <div><img src="image/IMG_0309.JPG" alt=""></div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+          dots: true,
+          });
+        });
+      </script>
+  </body>
