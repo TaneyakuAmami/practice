@@ -14,7 +14,7 @@ python -c "import django; print(django.__path__)"
 cd Documents\Git\practice\python\Django\djangotutorial
 http://127.0.0.1:8000/polls/
 
-cd Documents\Git\practice\python\Django\practice
+cd C:\Users\hkrmo\Documents\Git\practice\python\Django\practice
 http://127.0.0.1:8000/csspractice/
 http://127.0.0.1:8000/commentlist/
 

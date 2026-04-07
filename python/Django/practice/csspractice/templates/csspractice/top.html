@@ -6,6 +6,8 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'csspractice/style.css' %}">
     <link rel="stylesheet" href="{% static 'csspractice/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   </head>
   <body>
     {% include 'csspractice/header.html' %}
@@ -18,5 +20,16 @@
      </ul>
    </div> 
 
+   <div class="slider">
+    <div><img src="{% static 'csspractice/images/IMG_0169.JPG' %}" alt=""></div>
+    <div><img src="{% static 'csspractice/images/IMG_0223.JPG' %}" alt=""></div>
+    <div><img src="{% static 'csspractice/images/IMG_0309.JPG' %}" alt=""></div>
+    <div><img src="{% static 'csspractice/images/IMG_0309.JPG' %}" alt=""></div>
+    <div><img src="{% static 'csspractice/images/IMG_0309.JPG' %}" alt=""></div>
+  </div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="{% static 'csspractice/js/autoslide.js' %}"></script>
   </body>
 </html>
