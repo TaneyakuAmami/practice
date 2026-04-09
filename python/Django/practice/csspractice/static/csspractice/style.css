@@ -118,7 +118,7 @@ div ul {
         object-fit: cover;
     }
 
-    @media (widht < 600px) {
+    @media (width < 600px) {
         .container {
             --item-width: calc(100vw - 32px);
             width: var(--item-wedth);
@@ -128,9 +128,15 @@ div ul {
 }
 
 .slider {
-    width: 600px;
-    min-width: 600px;
-    height: 300px;
+    --picture-width: 300px;
+    --picture-height: 150px;
+    width: var(--picture-width);
+    scroll-snap-align: center;
+    background-color: green;
+
+    .picture {
+        height: var(--picture-height);
+    }
 
     img {
         display: block;
@@ -138,5 +144,12 @@ div ul {
         height: 100%;
         object-fit: cover;
     }
-
 }
+
+
+.demo_37{
+   width: 300px;
+   height: 150px;
+   background-color: green;
+   color: #fff;
+ }
