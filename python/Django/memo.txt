@@ -7,6 +7,9 @@ python manage.py startapp [アプリ名]
 mysite/settings.pyのINSTALLED_APPSのデータベースを作成
 python manage.py migrate
 
+mysite/settings.pyのINSTALLED_APPSに追記
+mysite/urls.pyのurlpatternsに追記
+アプリケーション配下のurl.pyに変数app_name = "アプリケーション名"　を追記
 
 python -c "import django; print(django.__path__)"
 ['C:\\Users\\hkrmo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\django']
@@ -17,6 +20,7 @@ http://127.0.0.1:8000/polls/
 cd C:\Users\hkrmo\Documents\Git\practice\python\Django\practice
 http://127.0.0.1:8000/csspractice/
 http://127.0.0.1:8000/commentlist/
+http://127.0.0.1:8000/webscraping/
 
 
 cd C:\Users\hkrmo\Documents\Git\practice\python\Django\databasepractice

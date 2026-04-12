@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>start</title>
+  </head>
+  <body>
+    <div>URLを入力</div>
+    <form action="/webscraping/execute" method="post">
+      {% csrf_token %}
+      <fieldset>
+        <input type="textarea" name="url" id="123" value="">
+      </fieldset>
+        <input type="submit" value="実行">
+    </form>
+  </body>
+</html>
