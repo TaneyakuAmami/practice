@@ -11,6 +11,7 @@ class Analyser():
         soup = BeautifulSoup(html_text, "html.parser")
         title = soup.find("h1").text
         print("h1=" + title)
+        return title
 
     def webaccess(self, url_str):
         print("Webアクセス開始")
