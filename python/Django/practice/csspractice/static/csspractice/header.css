@@ -13,6 +13,12 @@ header {
 
 .title {
     margin-right: auto;
+
+    img {
+        display: block;
+        width: 500px;
+    }
+
 }
 
 .menu-item {
@@ -30,3 +36,4 @@ header li a {
 body {
     padding-top: 100px;
 }
+
