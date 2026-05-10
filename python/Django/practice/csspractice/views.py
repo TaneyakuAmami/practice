@@ -8,6 +8,9 @@ from django.urls import reverse
 def top(request):
     return render(request, "csspractice/top.html")
 
+def login(request):
+    return render(request, "csspractice/login.html")
+
 def commentView(request):
     comments = Comment.objects.order_by("-post_date")[:5]
     context = {"comments": comments}
