@@ -28,8 +28,17 @@ header {
 }
 
 header li a {
-    color: black
+    color: black;
 }
+
+#login {
+    color: white;
+    background: rgb(17, 56, 251);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
 
 
 /* 参考: https://kouhekikyozou.com/css_position_fixed_header_overlap */

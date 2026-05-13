@@ -1,14 +1,18 @@
 /* 参考：https://web-camp.io/magazine/archives/82498/ */
 body {
-    background-color: #808080
+    background-color: #808080;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
     width: 400px;
     padding: 40px 10px;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50% -50%);
     background-color: #000;
     text-align: center;
